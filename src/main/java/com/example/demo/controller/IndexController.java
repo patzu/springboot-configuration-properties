@@ -20,7 +20,7 @@ public class IndexController {
         Map<String, String> appDetails = new HashMap<>();
         appDetails.put("name", appProperties.getName());
         appDetails.put("description", appProperties.getDescription());
-
+        System.out.println(appProperties.getSecurity().getPermissions());
         return appDetails;
     }
 }
